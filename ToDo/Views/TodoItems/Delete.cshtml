@@ -1,0 +1,50 @@
+@model ToDo.Models.TodoItem
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TodoItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @if (Model.IsCompleted == true)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.DateCompleted)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DateCompleted)
+            </dd>
+        }
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateCreated)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsCompleted)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsCompleted)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Text)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Text)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>

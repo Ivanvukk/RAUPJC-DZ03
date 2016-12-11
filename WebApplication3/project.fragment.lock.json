@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "exports": {
+    "TodoItem/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5.2",
+      "compile": {
+        "bin/Debug/TodoItem.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/TodoItem.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/TodoItem.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "TodoSqlRepository/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5.2",
+      "compile": {
+        "bin/Debug/TodoRepository.dll": {}
+      },
+      "runtime": {
+        "../../DZ3/packages/EntityFramework.6.1.3/lib/net45/EntityFramework.SqlServer.dll": {},
+        "../../DZ3/packages/EntityFramework.6.1.3/lib/net45/EntityFramework.dll": {},
+        "bin/Debug/TodoRepository.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/TodoRepository.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "TodoDbContext/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5.2",
+      "compile": {
+        "bin/Debug/TodoDbContext.dll": {}
+      },
+      "runtime": {
+        "../packages/EntityFramework.6.1.3/lib/net45/EntityFramework.SqlServer.dll": {},
+        "../packages/EntityFramework.6.1.3/lib/net45/EntityFramework.dll": {},
+        "bin/Debug/TodoDbContext.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/TodoDbContext.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}
